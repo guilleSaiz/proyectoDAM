@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private GameAdapter adapter;
     private SearchView searchView;
 
-    public static final String API_KEY = "c94644588fca4e12a4258d61a72d476b";
+    public static final String API_KEY = "";
     private static final String BASE_URL = "https://api.rawg.io/api/";
 
     private RAWGApi api;

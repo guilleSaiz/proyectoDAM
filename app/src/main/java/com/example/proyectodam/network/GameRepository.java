@@ -13,7 +13,7 @@ public class GameRepository {
     private YouTubeApi youtubeApi;
     private static final String RAWG_BASE_URL = "https://api.rawg.io/api/";
     private static final String YOUTUBE_BASE_URL = "https://www.googleapis.com/youtube/v3/";
-    private static final String YOUTUBE_KEY = "AIzaSyCUUD8rCxTJ6B48an3r1s2IQbL0NJfFcB8";
+    private static final String YOUTUBE_KEY = "";
 
     public GameRepository() {
         Retrofit rawgRetrofit = new Retrofit.Builder()
