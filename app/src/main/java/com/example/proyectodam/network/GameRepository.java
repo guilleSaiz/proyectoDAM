@@ -3,6 +3,7 @@ package com.example.proyectodam.network;
 import com.example.proyectodam.data.Game;
 import com.example.proyectodam.data.ScreenshotsResponse;
 import com.example.proyectodam.data.YouTubeResponse;
+import com.example.proyectodam.data.GameResponse;
 
 import retrofit2.Callback;
 import retrofit2.Retrofit;
@@ -13,7 +14,7 @@ public class GameRepository {
     private YouTubeApi youtubeApi;
     private static final String RAWG_BASE_URL = "https://api.rawg.io/api/";
     private static final String YOUTUBE_BASE_URL = "https://www.googleapis.com/youtube/v3/";
-    private static final String YOUTUBE_KEY = "";
+    private static final String YOUTUBE_KEY = "AIzaSyDbyNLdx0SeNPkn5Lr86Z34HvKNAhQGAf4";
 
     public GameRepository() {
         Retrofit rawgRetrofit = new Retrofit.Builder()
@@ -31,6 +32,10 @@ public class GameRepository {
         youtubeApi = ytRetrofit.create(YouTubeApi.class);
     }
 
+    public void getGames(String apiKey, Callback<GameResponse> callback) {
+        rawgApi.getGames(apiKey).enqueue(callback);
+    }
+
     public void getGameDetails(int gameId, String apiKey, Callback<Game> callback) {
         rawgApi.getGameDetails(gameId, apiKey).enqueue(callback);
     }
@@ -40,7 +45,13 @@ public class GameRepository {
     }
 
     public void searchYoutubeVideo(String query, Callback<YouTubeResponse> callback) {
-        youtubeApi.searchVideo("snippet", 1, query + " trailer", YOUTUBE_KEY, "video")
-                .enqueue(callback);
+        youtubeApi.searchVideo(
+                "snippet",   // part
+                5,           // maxResults
+                query,       // query
+                YOUTUBE_KEY, // apiKey
+                "video",     // type
+                "true"       // embeddable
+        ).enqueue(callback);
     }
 }

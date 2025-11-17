@@ -1,0 +1,176 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen del juego -->
+        <ImageView
+            android:id="@+id/detailGameImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagen del juego" />
+
+        <!-- Rectángulo con título -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2A2A2A"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/detailGameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Info del juego -->
+        <LinearLayout
+            android:id="@+id/layoutInfo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Lanzamiento -->
+            <TextView
+                android:id="@+id/detailGameReleaseLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lanzamiento"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailGameRelease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <!-- Plataformas -->
+            <TextView
+                android:id="@+id/detailGamePlatformsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plataformas"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/detailGamePlatforms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <!-- Géneros -->
+            <TextView
+                android:id="@+id/detailGameGenresLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Géneros"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/detailGameGenres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <!-- Desarrolladores -->
+            <TextView
+                android:id="@+id/detailDevelopersLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desarrolladores"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/detailDevelopers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <!-- Website -->
+            <TextView
+                android:id="@+id/detailWebsiteLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sitio web"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/detailWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="@color/link_color"/>
+
+            <!-- Puntuación -->
+            <TextView
+                android:id="@+id/detailGameRatingLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Puntuación"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/detailGameRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+
+            <!-- YouTube Player -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="12dp" />
+
+            <!-- Screenshots horizontal -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/screenshotRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Tags -->
+            <TextView
+                android:id="@+id/detailTagsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tags"
+                android:textColor="#8B8B8B"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/detailTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

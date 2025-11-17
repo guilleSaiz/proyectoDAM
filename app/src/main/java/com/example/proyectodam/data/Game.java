@@ -38,7 +38,7 @@ public class Game implements Serializable {
     public List<Screenshot> getScreenshots() { return screenshots; }
 
     public String getBackgroundImage() {
-        return backgroundImage != null ? backgroundImage : backgroundImageString;
+        return backgroundImage;
     }
 
     // ===== CAMPOS AUXILIARES PARA ROOM/CACHE =====

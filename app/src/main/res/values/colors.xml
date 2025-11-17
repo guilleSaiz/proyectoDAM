@@ -2,5 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="link_color">#0645AD</color>  <!-- Un azul típico para links -->
+    <color name="link_color">#0645AD</color><!-- Un azul típico para links -->
+    <color name="tab_selected">#8E8E8E</color>      <!-- gris claro -->
+    <color name="tab_unselected">#2A2A2A</color>    <!-- gris oscuro -->
 </resources>

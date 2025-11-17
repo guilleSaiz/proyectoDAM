@@ -13,39 +13,41 @@ import com.example.proyectodam.data.Game;
 
 import java.util.List;
 
-public class ScreenshotsAdapter extends RecyclerView.Adapter<ScreenshotsAdapter.ViewHolder> {
-    private List<Game.Screenshot> screenshots;
+public class ScreenshotsAdapter extends RecyclerView.Adapter<ScreenshotsAdapter.VH> {
 
-    public ScreenshotsAdapter(List<Game.Screenshot> screenshots) {
-        this.screenshots = screenshots;
+    private List<Game.Screenshot> items;
+
+    public ScreenshotsAdapter(List<Game.Screenshot> items) {
+        this.items = items;
+    }
+
+    public void setItems(List<Game.Screenshot> items) {
+        this.items = items;
+        notifyDataSetChanged();
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_screenshot, parent, false);
-        return new ViewHolder(view);
+    public VH onCreateViewHolder(ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_screenshot, parent, false);
+        return new VH(v);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        Game.Screenshot shot = screenshots.get(position);
-        Glide.with(holder.imageView.getContext())
-                .load(shot.image)
-                .into(holder.imageView);
+    public void onBindViewHolder(VH holder, int position) {
+        Game.Screenshot s = items.get(position);
+        Glide.with(holder.image.getContext()).load(s.image).into(holder.image);
     }
 
     @Override
     public int getItemCount() {
-        return screenshots.size();
+        return items != null ? items.size() : 0;
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
-
-        public ViewHolder(View itemView) {
+    static class VH extends RecyclerView.ViewHolder {
+        ImageView image;
+        VH(View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.screenshotImage);
+            image = itemView.findViewById(R.id.screenshotImage);
         }
     }
 }

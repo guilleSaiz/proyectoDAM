@@ -13,6 +13,7 @@ public interface YouTubeApi {
             @Query("maxResults") int maxResults,
             @Query("q") String query,
             @Query("key") String apiKey,
-            @Query("type") String type
+            @Query("type") String type,
+            @Query("videoEmbeddable") String embeddable
     );
 }
