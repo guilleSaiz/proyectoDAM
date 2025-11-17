@@ -1,4 +1,4 @@
-package com.example.proyectodam.ui;
+package com.example.proyectodam.ui.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

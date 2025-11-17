@@ -24,7 +24,7 @@ import com.example.proyectodam.data.ScreenshotsResponse;
 import com.example.proyectodam.data.YouTubeResponse;
 import com.example.proyectodam.network.GameRepository;
 import com.example.proyectodam.ui.GameDetail;
-import com.example.proyectodam.ui.ScreenshotsAdapter;
+import com.example.proyectodam.ui.adapters.ScreenshotsAdapter;
 import com.example.proyectodam.utils.GameUtils;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;

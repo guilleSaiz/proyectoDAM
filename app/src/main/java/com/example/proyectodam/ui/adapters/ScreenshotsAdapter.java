@@ -1,4 +1,4 @@
-package com.example.proyectodam.ui;
+package com.example.proyectodam.ui.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;

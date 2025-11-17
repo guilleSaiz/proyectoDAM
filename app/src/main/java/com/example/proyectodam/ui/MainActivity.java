@@ -24,6 +24,7 @@ import com.example.proyectodam.R;
 import com.example.proyectodam.data.Game;
 import com.example.proyectodam.data.GameResponse;
 import com.example.proyectodam.network.RAWGApi;
+import com.example.proyectodam.ui.adapters.GameAdapter;
 
 import java.util.List;
 
@@ -134,12 +135,6 @@ public class MainActivity extends AppCompatActivity {
             if (searchPanel != null) searchPanel.setVisibility(View.GONE);
         });
 
-        // Colores de barra de sistema
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = getWindow();
-            window.setStatusBarColor(Color.parseColor("#2A2A2A"));
-            window.setNavigationBarColor(Color.parseColor("#2A2A2A"));
-        }
 
         // Crear instancia de Retrofit
         Retrofit retrofit = new Retrofit.Builder()

@@ -41,91 +41,13 @@ public class Game implements Serializable {
         return backgroundImage;
     }
 
-    // ===== CAMPOS AUXILIARES PARA ROOM/CACHE =====
-
-    private String genreString;
-    private String platformString;
-    private String developerString;
-    private String tagString;
-    private String websiteString;
-    private String youtubeVideoId;
-    private String backgroundImageString;
-    private float ratingFloat;
-
-    // ===== SETTERS para Room =====
+    // SETTERS para Room
     public void setId(int id) {
         this.id = id;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public void setReleased(String released) {
-        this.released = released;
-    }
-    public void setGenres(String genres) {
-        this.genreString = genres;
-    }
 
-    public void setPlatforms(String platforms) {
-        this.platformString = platforms;
-    }
-
-    public void setDevelopers(String developers) {
-        this.developerString = developers;
-    }
-
-    public void setTags(String tags) {
-        this.tagString = tags;
-    }
-
-    public void setWebsite(String website) {
-        this.websiteString = website;
-    }
-
-    public void setYoutubeVideo(String youtubeVideoId) {
-        this.youtubeVideoId = youtubeVideoId;
-    }
-
-    public void setRating(float rating) {
-        this.ratingFloat = rating;
-    }
-
-    public void setBackgroundImage(String url) {
-        this.backgroundImageString = url;
-    }
-
-    // ===== GETTERS auxiliares para Room =====
-
-    public String getGenresString() {
-        return genreString;
-    }
-
-    public String getPlatformsString() {
-        return platformString;
-    }
-
-    public String getDevelopersString() {
-        return developerString;
-    }
-
-    public String getTagsString() {
-        return tagString;
-    }
-
-    public String getYoutubeVideo() {
-        return youtubeVideoId;
-    }
-
-    public float getRatingFloat() {
-        return (float) rating;
-    }
-
-    public String getWebsiteString() {
-        return websiteString;
-    }
-
-    // ===== CLASES INTERNAS =====
+    // CLASES INTERNAS
 
     public static class PlatformItem implements Serializable {
         public Platform platform;

@@ -1,4 +1,4 @@
-package com.example.proyectodam.ui;
+package com.example.proyectodam.ui.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.proyectodam.R;
 import com.example.proyectodam.data.Game;
+import com.example.proyectodam.ui.GameDetail;
 
 import java.util.HashSet;
 import java.util.List;
