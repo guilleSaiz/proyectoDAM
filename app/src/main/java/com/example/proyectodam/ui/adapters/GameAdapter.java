@@ -47,7 +47,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
                 .load(game.getBackgroundImage())
                 .into(holder.gameImage);
 
-        // ------------------------------------
+
         // PLATAFORMAS (limpia duplicados)
         holder.platformContainer.removeAllViews();
 
@@ -87,10 +87,10 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
             holder.platformContainer.addView(logo);
         }
 
-        // ------------------------------------
+
         // BOTONES LIKE Y TAG (ImageView ahora)
         holder.btnLike.setOnClickListener(v -> {
-            // Ejemplo:
+            // Ejemplo si se desea rellenar.
             // holder.btnLike.setImageResource(R.drawable.w_heart_full);
         });
 
@@ -98,8 +98,8 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
             // Acción del tag
         });
 
-        // ------------------------------------
-        // Click en item → ir a detalle
+
+        // Click en item
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, GameDetail.class);
             intent.putExtra("gameId", game.getId());
@@ -113,12 +113,12 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
         return gameList.size();
     }
 
-    // ----------------------------------------
+
     // ViewHolder
     public static class GameViewHolder extends RecyclerView.ViewHolder {
         TextView gameName;
         ImageView gameImage;
-        ImageView btnLike, btnTag;  // <-- CORREGIDO
+        ImageView btnLike, btnTag;
         LinearLayout platformContainer;
 
         public GameViewHolder(View itemView) {

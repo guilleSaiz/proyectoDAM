@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.proyectodam.ui.fragments.GameInfoFragment;
-import com.example.proyectodam.ui.fragments.GameNoticiasFragment;
-import com.example.proyectodam.ui.fragments.GameTiendasFragment;
-import com.example.proyectodam.ui.fragments.GameComunidadFragment;
+import com.example.proyectodam.ui.gamemenu.GameInfoFragment;
+import com.example.proyectodam.ui.gamemenu.GameNoticiasFragment;
+import com.example.proyectodam.ui.gamemenu.GameTiendasFragment;
+import com.example.proyectodam.ui.gamemenu.GameComunidadFragment;
 
 public class GameDetailFragmentAdapter extends FragmentStateAdapter {
 

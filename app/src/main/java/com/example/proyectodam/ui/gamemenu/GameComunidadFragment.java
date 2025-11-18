@@ -1,4 +1,4 @@
-package com.example.proyectodam.ui.fragments;
+package com.example.proyectodam.ui.gamemenu;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

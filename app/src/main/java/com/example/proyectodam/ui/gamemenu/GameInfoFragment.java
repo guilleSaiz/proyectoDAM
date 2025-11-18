@@ -1,6 +1,6 @@
-package com.example.proyectodam.ui.fragments;
+package com.example.proyectodam.ui.gamemenu;
 
-import static com.example.proyectodam.ui.MainActivity.API_KEY;
+import static com.example.proyectodam.ui.menu.HomeFragment.API_KEY;
 
 import android.os.Bundle;
 import android.text.TextUtils;

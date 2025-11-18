@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomMenu"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="#2A2A2A">
+
+    <TextView
+        android:id="@+id/tabHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tabBiblioteca"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Biblioteca"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tabPerfil"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Perfil"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tabBuscar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Buscar"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tabInfo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Info"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
