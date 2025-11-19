@@ -13,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Juego Detalle"
+        android:text="Juego"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:background="#2A2A2A"
