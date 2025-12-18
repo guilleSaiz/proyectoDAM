@@ -18,6 +18,9 @@
             android:name=".ui.GameDetail"
             android:exported="false" />
         <activity
+            android:name=".ui.RegistroActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
